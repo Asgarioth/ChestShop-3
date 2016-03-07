@@ -1,16 +1,13 @@
 ChestShop
 ================================
 
+Original code by Acrobot: (https://github.com/Acrobot/ChestShop-3)
+
 ChestShop is an awesome plugin for managing your server's economy. 
 By using chests and signs, you can effectively create your own market!
 
-ChestShop also makes admininstators' lives easier. 
-Simply drag-and-drop the .jar to your "plugins" folder and you're done! 
-
-If you need any help - just ask. There is a ticket system, in which you can report bugs, suggest improvements and more.
-Don't be fooled though - you might think that your ticket disappeared, however that's not the case.   
-You should configure the system to show **"All tickets"**, instead of only **"All open"** - you can do that by clicking on the "Filters".
-
+This fork has been created because the project is currently marked as abandoned on DevBukkit.
+However we do not want to switch to another shop plugin when running 1.9... :)
 
 Building
 --------------------------------
