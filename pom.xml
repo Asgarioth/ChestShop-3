@@ -71,14 +71,14 @@
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <version>1.8.8-R0.1-SNAPSHOT</version>
+            <version>1.9-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.mcstats.bukkit</groupId>
             <artifactId>metrics</artifactId>
-            <version>R7</version>
+            <version>R8-SNAPSHOT</version>
             <scope>compile</scope>
             <exclusions>
                 <exclusion>
@@ -147,7 +147,7 @@
         <dependency>
             <groupId>fr.xephi</groupId>
             <artifactId>authme</artifactId>
-            <version>5.0-SNAPSHOT</version>
+            <version>5.2-SNAPSHOT</version>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>

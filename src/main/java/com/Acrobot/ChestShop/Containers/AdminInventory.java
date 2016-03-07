@@ -6,6 +6,7 @@ import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.Location;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -168,6 +169,10 @@ public class AdminInventory implements Inventory {
     }
 
     public ListIterator<ItemStack> iterator(int i) {
+        return null;
+    }
+   
+    public Location getLocation() {
         return null;
     }
 }
