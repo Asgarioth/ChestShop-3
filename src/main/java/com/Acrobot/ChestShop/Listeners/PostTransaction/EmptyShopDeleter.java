@@ -52,13 +52,11 @@ public class EmptyShopDeleter implements Listener {
 
     private static boolean shopShouldBeRemoved(Inventory inventory, ItemStack[] stock) {
         int i = 0;
-        ItemStack[] tmpStock = new ItemStack[stock.length];
         if(Properties.ALLOW_PARTIAL_TRANSACTIONS) {
-          for (ItemStack item : stock) {
-            tmpStock[i] = new ItemStack(item.getType(), 1); 
-            i++;
-          }
+          return Properties.REMOVE_EMPTY_SHOPS && !ChestShopSign.isAdminShop(inventory) && !InventoryUtil.hasItems(stock, inventory,1);
         }
-        return Properties.REMOVE_EMPTY_SHOPS && !ChestShopSign.isAdminShop(inventory) && !InventoryUtil.hasItems(tmpStock, inventory);
+        else {
+          return Properties.REMOVE_EMPTY_SHOPS && !ChestShopSign.isAdminShop(inventory) && !InventoryUtil.hasItems(stock, inventory);
+        }
     }
 }

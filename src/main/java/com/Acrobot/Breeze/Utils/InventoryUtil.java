@@ -75,6 +75,15 @@ public class InventoryUtil {
         return true;
     }
 
+    public static boolean hasItems(ItemStack[] items, Inventory inventory, int i) {
+       for (ItemStack item : items) {
+         if (!inventory.containsAtLeast(item,1)) {
+           return false;
+         }
+       }
+       return true;
+    }
+
     /**
      * Checks if the item fits the inventory
      *
